@@ -8,14 +8,15 @@ const UiHeaders = () => (
     sidenav={<Sidenav activeScreen="headers" />}
     sidenavHeader
     header="Headers"
-  // tabs={[
-  //   { to: '/welcome', text: 'Tab1' },
-  //   { to: '#/test2', text: 'Tab2' },
-  // ]}
+    // tabs={[
+    //   { to: '/welcome', text: 'Tab1' },
+    //   { to: '#/test2', text: 'Tab2' },
+    // ]}
     primaryActions={<PrimaryActions />}
-    body={
+    body={(
       <Card key="headers1">
-        <CardHeader>Headlines
+        <CardHeader>
+          Headlines
           <span className="mr-auto">
             <Divider horizontal className="ml-4" />
           </span>
@@ -36,7 +37,10 @@ const UiHeaders = () => (
           <CardTitle tag="h1">Card Title h1</CardTitle>
           <CardTitle tag="h2">Card Title h2</CardTitle>
           <CardTitle tag="h3">Card Title h3</CardTitle>
-          <CardTitle tag="h4">Card Title h4 <span className="card-title-sm">extra top margin on h4 to separate content areas</span></CardTitle>
+          <CardTitle tag="h4">
+            Card Title h4
+            <span className="card-title-sm">extra top margin on h4 to separate content areas</span>
+          </CardTitle>
           <CardTitle tag="h5">Card Title h5</CardTitle>
           <CardTitle tag="h6">Card Title h6</CardTitle>
 
@@ -66,17 +70,26 @@ const UiHeaders = () => (
         <Divider size="lg" />
 
         <CardBody>
-          <CardTitle tag="h5" className="justify-content-center">Dividing Line between stacked CardBodys</CardTitle>
+          <CardTitle tag="h5" className="justify-content-center">
+            Dividing Line between stacked
+            CardBodys
+          </CardTitle>
         </CardBody>
 
         <CardBody>
-          <Divider horizontal size="sm" className="ml-3" /> horizontal divider sm
-          <Divider horizontal size="md" className="ml-3" /> horizontal divider md
-          <Divider horizontal  size="lg" className="ml-3" /> horizontal divider lg
+          <Divider horizontal size="sm" className="ml-3" />
+          {' '}
+          horizontal divider sm
+          <Divider horizontal size="md" className="ml-3" />
+          {' '}
+          horizontal divider md
+          <Divider horizontal size="lg" className="ml-3" />
+          {' '}
+          horizontal divider lg
         </CardBody>
 
       </Card>
-    }
+    )}
   />
 );
 
